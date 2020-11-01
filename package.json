@@ -4,12 +4,15 @@
   "description": "Responsive Portfolio",
   "main": "index.js",
   "scripts": {
-    "scss":"node-sass -w scss/ -o dist/css --recursive"
+    "scss": "node-sass -w scss/ -o dist/css --recursive"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1"
   }
 }
