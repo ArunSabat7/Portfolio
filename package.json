@@ -4,7 +4,8 @@
   "description": "Responsive Portfolio",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass -w scss/ -o dist/css"
+    "test": "echo hello",
+    "scss": "node-sass -w scss/ -o dist/css --recursive"
   },
   "keywords": [],
   "author": "",
