@@ -58,6 +58,12 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+  .resume {
+    grid-template-areas:
+      "exp"
+      "aca";
+    grid-template-columns: 1fr;
+  }
 }
 // mobile screens
 @include mediaSm {

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Responsive Portfolio",
   "main": "index.js",
-  "homepage":"https://arunsabat7.github.io/Portfolio/",
+  "homepage":"https://arunsabat7.github.io/Portfolios/",
   "scripts": {
     "test": "echo hello",
     "scss": "node-sass -w scss/ -o dist/css --recursive",
