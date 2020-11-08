@@ -275,7 +275,10 @@ main {
     grid-template-areas: "bio-image" "bio" "job-1" "job-2" "job-3";
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .resume {
+    grid-template-areas: "exp" "aca";
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
   .projects {
