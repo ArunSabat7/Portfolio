@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Responsive Portfolio",
   "main": "index.js",
-  "homepage":"https://arunsabat7.github.io/Portfolios/",
+  "homepage":"https://arunsabat7.github.io/Portfolio/",
   "scripts": {
     "test": "echo hello",
-    "scss": "node-sass -w scss/ -o dist/css --recursive",
+    "scss": "node-sass -w scss/ -o dist/css --recursive",    
     "deploy":"gh-pages -d dist"
   },
   "keywords": [],
