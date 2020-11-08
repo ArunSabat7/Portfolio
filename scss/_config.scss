@@ -1,4 +1,5 @@
 $primary-color: rgb(80, 73, 73);
+// $primary-color: #fff;
 $secondary-color: rgb(169, 212, 149);
 $showImg: true;
 $img: url(../img/i1.jpg);
@@ -26,5 +27,35 @@ $bcOpacity: 0.9;
         background: rgba($primary-color, $bcOpacity);
       }
     }
+  }
+}
+// media queries
+@mixin mediaSm {
+  @media screen and(max-width:500px) {
+    @content;
+  }
+}
+@mixin mediaMd {
+  @media screen and(max-width:760px) {
+    @content;
+  }
+}
+@mixin mediaLg {
+  @media screen and(min-width:761px) and(max-width:1150px) {
+    @content;
+  }
+}
+@mixin mediaXl {
+  @media screen and(min-width:1151px) {
+    @content;
+  }
+}
+
+// set text-color
+@function setColor($color) {
+  @if (lightness($color) >40) {
+    @return black;
+  } @else {
+    @return white;
   }
 }

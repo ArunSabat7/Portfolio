@@ -1,4 +1,5 @@
 @import "config";
+@import "menu";
 * {
   box-sizing: border-box;
 }
@@ -12,7 +13,7 @@ a {
 body {
   @include bc();
   background-color: $primary-color;
-  color: white;
+  color: setColor($primary-color);
   height: 100%;
 }
 h1,
@@ -33,6 +34,7 @@ header {
 }
 main {
   padding: 3rem;
+  min-height: calc(100vh-50px);
   &#home {
     overflow: hidden;
     h1 {
@@ -52,3 +54,46 @@ main {
     }
   }
 }
+// about.html
+.about-info {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-areas:
+    "bio-image bio bio"
+    "job-1 job-2 job-3";
+  grid-template-columns: repeat(3, 1fr);
+
+  .bio-image {
+    grid-area: bio-image;
+    margin: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 2px solid $secondary-color;
+  }
+  .bio {
+    grid-area: bio;
+  }
+  .job-1 {
+    grid-area: job-1;
+  }
+  .job-2 {
+    grid-area: job-2;
+  }
+  .job-3 {
+    grid-area: job-3;
+  }
+  .job {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
+  }
+}
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-color, 10);
+  color: $secondary-color;
+  height: 50px;
+}
+@import "mobile";
